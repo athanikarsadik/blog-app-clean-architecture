@@ -4,12 +4,14 @@ class Blog {
   final String title;
   final String content;
   final String imageUrl;
+  final String? userName;
   final List<String> topics;
   final DateTime updatedAt;
 
   Blog(
       {required this.id,
       required this.userId,
+      this.userName,
       required this.title,
       required this.content,
       required this.imageUrl,
